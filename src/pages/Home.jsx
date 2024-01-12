@@ -5,9 +5,11 @@ import Island from '../modals/Island';
 import Sky from '../modals/Sky';
 import Bird from '../modals/Bird';
 import Plane from '../modals/Plane';
+import HomeInfo from '../components/HomeInfo';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(null);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -42,6 +44,10 @@ const Home = () => {
 
   return (
     <section className='relative w-full h-screen'>
+      <div className='absolute left-0 right-0 z-10 flex items-center justify-center top-28'>
+        {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
+
       <Canvas // a react renderer for threejs
         className={`w-full h-screen bg-transparent ${
           isRotating ? 'cursor-grabbing' : 'cursor-grab'
@@ -64,13 +70,14 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky />
+          <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
           />
           <Plane
             isRotating={isRotating}
