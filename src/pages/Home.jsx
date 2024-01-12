@@ -27,7 +27,20 @@ const Home = () => {
         camera={{ near: 0.1, far: 1000 }} // objects nearer than near and further than far will not be rendered
       >
         <Suspense fallback={<Loader />}>
-          <ambientLight />
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 5, 10]} intensity={2} />
+          <spotLight
+            position={[0, 50, 10]}
+            angle={0.15}
+            penumbra={1}
+            intensity={2}
+          />
+          <hemisphereLight
+            skyColor='#b1e1ff'
+            groundColor='#000000'
+            intensity={1}
+          />
           <Island
             position={islandPosition}
             scale={islandScale}
