@@ -1,11 +1,14 @@
 import { Canvas } from '@react-three/fiber';
-import { Suspense } from 'react';
+import { useState, Suspense } from 'react';
 import Loader from '../components/Loader';
 import Island from '../modals/Island';
 import Sky from '../modals/Sky';
 import Bird from '../modals/Bird';
 import Plane from '../modals/Plane';
+
 const Home = () => {
+  const [isRotating, setIsRotating] = useState(false);
+
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
@@ -20,13 +23,29 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   };
 
+  const adjustPalneForScreenSize = () => {
+    let screenScale, screenPosition;
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4];
+    }
+    return [screenScale, screenPosition];
+  };
+
+  const [planeScale, planePosition] = adjustPalneForScreenSize();
+
   const [islandScale, islandPosition, islandRotation] =
     adjustIslandForScreenSize();
 
   return (
     <section className='relative w-full h-screen'>
       <Canvas // a react renderer for threejs
-        className='w-full h-screen bg-transparent'
+        className={`w-full h-screen bg-transparent ${
+          isRotating ? 'cursor-grabbing' : 'cursor-grab'
+        }`}
         camera={{ near: 0.1, far: 1000 }} // objects nearer than near and further than far will not be rendered
       >
         <Suspense fallback={<Loader />}>
@@ -50,8 +69,15 @@ const Home = () => {
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
           />
-          <Plane />
+          <Plane
+            isRotating={isRotating}
+            planePosition={planePosition}
+            planeScale={planeScale}
+            rotation={[0, 20, 0]}
+          />
         </Suspense>
       </Canvas>
     </section>
