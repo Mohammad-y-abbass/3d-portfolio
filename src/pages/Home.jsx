@@ -3,6 +3,8 @@ import { Suspense } from 'react';
 import Loader from '../components/Loader';
 import Island from '../modals/Island';
 import Sky from '../modals/Sky';
+import Bird from '../modals/Bird';
+import Plane from '../modals/Plane';
 const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -42,12 +44,14 @@ const Home = () => {
             groundColor='#000000'
             intensity={1}
           />
+          <Bird />
           <Sky />
           <Island
             position={islandPosition}
             scale={islandScale}
             rotation={islandRotation}
           />
+          <Plane />
         </Suspense>
       </Canvas>
     </section>
