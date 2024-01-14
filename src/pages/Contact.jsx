@@ -4,8 +4,8 @@ import { Suspense, useRef, useState } from 'react';
 
 import { Fox } from '../modals/Fox';
 import useAlert from '../hooks/useAlert';
-import { Alert } from '../components/Alert';
-import { Loader } from '../components/Loader';
+import  Alert  from '../components/Alert';
+import  Loader  from '../components/Loader';
 
 const Contact = () => {
   const formRef = useRef();
@@ -32,9 +32,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Mohammad Abbass',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'mhmd.y.abbass@gmail.com',
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
