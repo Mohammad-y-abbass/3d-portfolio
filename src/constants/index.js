@@ -7,7 +7,6 @@ import {
   github,
   html,
   javascript,
-  meals,
   mongodb,
   mui,
   nextjs,
