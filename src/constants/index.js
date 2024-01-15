@@ -133,6 +133,7 @@ export const experiences = [
       'Integrating with backend services, APIs, and databases to fetch and display educational content seamlessly.',
       'Conducting regular code reviews and optimizations to maintain code quality and improve website performance.',
       'Ensuring cross-browser compatibility and responsiveness for a smooth user experience across various devices.',
+      'Configured custom ESLint and Prettier settings ensuring code consistency and adherence to best practices in collaboration with the development team.',
       'Developed an advanced filtered search engine, enhancing the e-learning website usability by allowing users to efficiently search and discover educational content based on specific criteria, contributing to an intuitive and personalized learning experience.',
     ],
   },
@@ -160,49 +161,17 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    name: 'Finance Tracker',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      'I developed a comprehensive finance Tracker utilizing the MERN stack, seamlessly integrating MongoDB, Express.js, React, and Node.js. The application offers robust features for tracking expenses and incomes. To provide users with insightful visualizations, I incorporated React-chart.js, enabling the representation of expense and income data through interactive charts. The seamless integration between the frontend and backend components ensures a smooth data flow, allowing for real-time updates. Leveraging MongoDB for efficient data storage and retrieval further optimizes the overall performance of the application. This project not only showcases my proficiency in full-stack development but also highlights my commitment to creating intuitive and visually engaging financial tracking solutions. I also implemeted redux for state management.',
+    link: 'https://github.com/Mohammad-y-abbass/Expense-tracker',
   },
   {
     iconUrl: threads,
     theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    name: 'Meals Website',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
-  },
-  {
-    iconUrl: car,
-    theme: 'btn-back-blue',
-    name: 'Car Finding App',
-    description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-  },
-  {
-    iconUrl: snapgram,
-    theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
-  },
-  {
-    iconUrl: estate,
-    theme: 'btn-back-black',
-    name: 'Real-Estate Application',
-    description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
-  },
-  {
-    iconUrl: summiz,
-    theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
-    description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+      'Crafted a Meals Website featuring comprehensive CRUD operations using Next.js and SQLite. Leveraging the power of Next.js, the site provides a dynamic and responsive user interface. The integration of SQLite ensures efficient and lightweight database operations, allowing users to seamlessly create, read, update, and delete meal entries. This project showcases my proficiency in utilizing modern frameworks and databases to create a performant and user-friendly web application for managing and exploring meal-related content.',
+    link: 'https://github.com/Mohammad-y-abbass/meals-app',
   },
 ];

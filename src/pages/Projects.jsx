@@ -8,17 +8,17 @@ const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My{' '}
+        Some of my{' '}
         <span className='blue-gradient_text drop-shadow font-semibold'>
           Projects
         </span>
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        Step into the realm of my web development journey as you explore
-        this projects page. Here, I've carefully curated a collection of
-        projects that encapsulate my problem-solving prowess, creative flair,
-        and unwavering commitment to excellence.
+        Step into the realm of my web development journey as you explore this
+        projects page. Here, I've carefully curated a collection of projects
+        that encapsulate my problem-solving prowess, creative flair, and
+        unwavering commitment to excellence.
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
