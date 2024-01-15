@@ -1,15 +1,11 @@
 import {
-  meta,
-  shopify,
-  tesla,
   bracket,
   bigDataSpecialist,
 } from '../assets/images';
 import {
-  car,
   contact,
   css,
-  estate,
+
   express,
   git,
   github,
@@ -23,8 +19,6 @@ import {
   pricewise,
   react,
   redux,
-  snapgram,
-  summiz,
   tailwindcss,
   threads,
   typescript,
