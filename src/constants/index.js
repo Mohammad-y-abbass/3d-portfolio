@@ -1,17 +1,13 @@
+import { bracket, bigDataSpecialist } from '../assets/images';
 import {
-  bracket,
-  bigDataSpecialist,
-} from '../assets/images';
-import {
-  contact,
   css,
-
+  meals,
   express,
   git,
   github,
   html,
   javascript,
-  linkedin,
+  meals,
   mongodb,
   mui,
   nextjs,
@@ -20,7 +16,6 @@ import {
   react,
   redux,
   tailwindcss,
-  threads,
   typescript,
 } from '../assets/icons';
 
@@ -133,24 +128,6 @@ export const experiences = [
   },
 ];
 
-export const socialLinks = [
-  {
-    name: 'Contact',
-    iconUrl: contact,
-    link: '/contact',
-  },
-  {
-    name: 'GitHub',
-    iconUrl: github,
-    link: 'https://github.com/YourGitHubUsername',
-  },
-  {
-    name: 'LinkedIn',
-    iconUrl: linkedin,
-    link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-  },
-];
-
 export const projects = [
   {
     iconUrl: pricewise,
@@ -161,7 +138,7 @@ export const projects = [
     link: 'https://github.com/Mohammad-y-abbass/Expense-tracker',
   },
   {
-    iconUrl: threads,
+    iconUrl: meals,
     theme: 'btn-back-green',
     name: 'Meals Website',
     description:

@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        Some of my{' '}
+        Some of my
         <span className='blue-gradient_text drop-shadow font-semibold'>
           Projects
         </span>
