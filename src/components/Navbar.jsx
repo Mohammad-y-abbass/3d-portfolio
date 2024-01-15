@@ -31,10 +31,10 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className='flex gap-2 justify-center items-center'>
-          <a href='https://www.linkedin.com/in/mohammad-abbass/'>
+          <a href='https://www.linkedin.com/in/mohammad-abbass/' target='_blank'>
             <img src={linkedin} alt='linkedin' className='w-6 h-6' />
           </a>
-          <a href='https://github.com/Mohammad-y-abbass'>
+          <a href='https://github.com/Mohammad-y-abbass' target='_blank' >
             <img src={github} alt='linkedin' className='w-6 h-6' />
           </a>
         </div>
