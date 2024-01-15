@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import  CTA  from '../components/CTA';
+import CTA from '../components/CTA';
 import { projects } from '../constants';
 import { arrow } from '../assets/icons';
 
@@ -15,11 +15,10 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        Step into the realm of my web development journey as you explore
+        this projects page. Here, I've carefully curated a collection of
+        projects that encapsulate my problem-solving prowess, creative flair,
+        and unwavering commitment to excellence.
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>

@@ -1,4 +1,10 @@
-import { meta, shopify, starbucks, tesla } from '../assets/images';
+import {
+  meta,
+  shopify,
+  tesla,
+  bracket,
+  bigDataSpecialist,
+} from '../assets/images';
 import {
   car,
   contact,
@@ -11,14 +17,12 @@ import {
   javascript,
   linkedin,
   mongodb,
-  motion,
   mui,
   nextjs,
   nodejs,
   pricewise,
   react,
   redux,
-  sass,
   snapgram,
   summiz,
   tailwindcss,
@@ -28,9 +32,49 @@ import {
 
 export const skills = [
   {
+    imageUrl: html,
+    name: 'HTML',
+    type: 'Frontend',
+  },
+  {
     imageUrl: css,
     name: 'CSS',
     type: 'Frontend',
+  },
+  {
+    imageUrl: mui,
+    name: 'Material-UI',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: tailwindcss,
+    name: 'Tailwind CSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: javascript,
+    name: 'JavaScript',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: typescript,
+    name: 'TypeScript',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: react,
+    name: 'React',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: nextjs,
+    name: 'Next.js',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: nodejs,
+    name: 'Node.js',
+    type: 'Backend',
   },
   {
     imageUrl: express,
@@ -47,109 +91,49 @@ export const skills = [
     name: 'GitHub',
     type: 'Version Control',
   },
-  {
-    imageUrl: html,
-    name: 'HTML',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: javascript,
-    name: 'JavaScript',
-    type: 'Frontend',
-  },
+
   {
     imageUrl: mongodb,
     name: 'MongoDB',
     type: 'Database',
   },
-  {
-    imageUrl: mui,
-    name: 'Material-UI',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: nextjs,
-    name: 'Next.js',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: nodejs,
-    name: 'Node.js',
-    type: 'Backend',
-  },
-  {
-    imageUrl: react,
-    name: 'React',
-    type: 'Frontend',
-  },
+
   {
     imageUrl: redux,
     name: 'Redux',
     type: 'State Management',
   },
-  {
-    imageUrl: tailwindcss,
-    name: 'Tailwind CSS',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: typescript,
-    name: 'TypeScript',
-    type: 'Frontend',
-  },
 ];
 
 export const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#accbe1',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Web Development Intern',
+    company_name: 'Bracket Technologies',
+    icon: bracket,
     iconBg: '#fbc3bc',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'June 2023 - August 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Developed and maintained web applications using Bracket programming language.',
+      'Collaborated with a team of developers to contribute to the creation of a flight and hotel booking platform during my internship.',
+      'Participated in the full development lifecycle, from conceptualization to implementation and testing.',
+      'Demonstrated adaptability by quickly grasping project requirements and contributing to the timely delivery of features within the internship period.',
       'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#b7e4c7',
-    date: 'Jan 2022 - Jan 2023',
+    title: 'Frontend Developer',
+    company_name: 'Big Data Specialist Programming Community',
+    icon: bigDataSpecialist,
+    iconBg: '#f6f6f6',
+    date: 'August 2023 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#a2d2ff',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Spearheading the frontend development for an e-learning website using Next.js, ensuring a modern and responsive user interface.',
+      'Implementing dynamic and interactive features to enhance the overall user experience and engagement.',
+      'Leveraging Next.js features like server-side rendering for optimized performance and SEO.',
+      'Integrating with backend services, APIs, and databases to fetch and display educational content seamlessly.',
+      'Conducting regular code reviews and optimizations to maintain code quality and improve website performance.',
+      'Ensuring cross-browser compatibility and responsiveness for a smooth user experience across various devices.',
+      'Developed an advanced filtered search engine, enhancing the e-learning website usability by allowing users to efficiently search and discover educational content based on specific criteria, contributing to an intuitive and personalized learning experience.',
     ],
   },
 ];
