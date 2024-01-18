@@ -16,6 +16,7 @@ import {
   redux,
   tailwindcss,
   typescript,
+  postgreSQL,
 } from '../assets/icons';
 
 export const skills = [
@@ -85,7 +86,11 @@ export const skills = [
     name: 'MongoDB',
     type: 'Database',
   },
-
+  {
+    imageUrl: postgreSQL,
+    name: 'PostgreSQL',
+    type: 'Database',
+  },
   {
     imageUrl: redux,
     name: 'Redux',

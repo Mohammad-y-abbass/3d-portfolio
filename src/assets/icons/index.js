@@ -22,7 +22,7 @@ import contact from './contact.svg';
 import soundon from './soundon.png';
 import soundoff from './soundoff.png';
 import meals from './meals.svg';
-
+import postgreSQL from './postgreSQL.png';
 export {
   css,
   express,
@@ -47,5 +47,6 @@ export {
   contact,
   soundon,
   soundoff,
-  meals
+  meals,
+  postgreSQL,
 };
