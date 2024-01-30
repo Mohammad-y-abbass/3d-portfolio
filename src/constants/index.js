@@ -134,8 +134,17 @@ export const experiences = [
 
 export const projects = [
   {
+    iconUrl:
+      'https://up.yimg.com/ib/th?id=OIP.fIEcQ7sr3R5f4MEOGSv7WwHaHa&%3Bpid=Api&rs=1&c=1&qlt=95&w=121&h=121',
+    theme: 'btn-back-black',
+    name: 'rapid-express',
+    description:
+      'Developed a CLI tool that that automates the creation of a boilerplate Express.js application with a predefined folder structure, middleware setup, error handling, and database configuration.',
+    link: 'https://github.com/Mohammad-y-abbass/rapid-express',
+  },
+  {
     iconUrl: pricewise,
-    theme: 'btn-back-red',
+    theme: 'btn-back-green',
     name: 'Finance Tracker',
     description:
       'I developed a comprehensive finance Tracker utilizing the MERN stack, seamlessly integrating MongoDB, Express.js, React, and Node.js. The application offers robust features for tracking expenses and incomes. To provide users with insightful visualizations, I incorporated React-chart.js, enabling the representation of expense and income data through interactive charts. The seamless integration between the frontend and backend components ensures a smooth data flow, allowing for real-time updates. Leveraging MongoDB for efficient data storage and retrieval further optimizes the overall performance of the application. This project not only showcases my proficiency in full-stack development but also highlights my commitment to creating intuitive and visually engaging financial tracking solutions. I also implemeted redux for state management.',
@@ -143,7 +152,7 @@ export const projects = [
   },
   {
     iconUrl: meals,
-    theme: 'btn-back-green',
+    theme: 'btn-back-orange',
     name: 'Meals Website',
     description:
       'Crafted a Meals Website featuring comprehensive CRUD operations using Next.js and SQLite. Leveraging the power of Next.js, the site provides a dynamic and responsive user interface. The integration of SQLite ensures efficient and lightweight database operations, allowing users to seamlessly create, read, update, and delete meal entries. This project showcases my proficiency in utilizing modern frameworks and databases to create a performant and user-friendly web application for managing and exploring meal-related content.',
