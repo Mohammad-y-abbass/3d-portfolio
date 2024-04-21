@@ -1,4 +1,4 @@
-import { bracket, bigDataSpecialist } from '../assets/images';
+import { bracket, bigDataSpecialist, mo } from '../assets/images';
 import {
   css,
   meals,
@@ -127,12 +127,19 @@ export const experiences = [
       'Conducting regular code reviews and optimizations to maintain code quality and improve website performance.',
       'Ensuring cross-browser compatibility and responsiveness for a smooth user experience across various devices.',
       'Configured custom ESLint and Prettier settings ensuring code consistency and adherence to best practices in collaboration with the development team.',
-      'Developed an advanced filtered search engine, enhancing the e-learning website usability by allowing users to efficiently search and discover educational content based on specific criteria, contributing to an intuitive and personalized learning experience.',
     ],
   },
 ];
 
 export const projects = [
+  {
+    iconUrl: mo,
+    theme: 'btn-back-black',
+    name: 'Mo',
+    description:
+      'Mo is a unique programming language designed to challenge conventional programming paradigms. Unlike traditional languages, Mo eschews keywords in favor of symbols, resulting in a syntax that is both minimalist and distinctive.',
+    link: 'https://github.com/Mohammad-y-abbass/mo-programming-language',
+  },
   {
     iconUrl:
       'https://up.yimg.com/ib/th?id=OIP.fIEcQ7sr3R5f4MEOGSv7WwHaHa&%3Bpid=Api&rs=1&c=1&qlt=95&w=121&h=121',
